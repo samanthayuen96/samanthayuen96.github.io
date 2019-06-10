@@ -1,0 +1,498 @@
+body, html {
+	height: 100%;
+	width: 100%;
+  	margin: 0px auto;
+  	padding: 0px;
+  	font-family: "Futura";
+  	font-style: bold;
+  	background-color: white;
+  }
+
+body {
+	overflow-x: hidden;
+}
+
+div {
+	display: block;
+}
+
+canvas {
+	background: url("../img/pad3.png");
+	background-size: 14vw;
+	background-repeat: no-repeat;
+	background-position: 60% 3%;
+	display: block;
+	margin: auto;
+	cursor: pointer;
+	z-index: 15;
+	position: absolute;
+	left: 5vw;
+}
+
+h2 {
+	text-align: center;
+	letter-spacing: 5px;
+	margin-bottom: 50px;
+}
+
+.scroll {
+	position: absolute;
+	left: 47%;
+	top: 80%;
+	margin: auto;
+	opacity: 1;
+}
+
+.scroll img {
+	width: 80px;
+}
+
+.scroll:hover {
+	opacity: 0.6;
+	transition-timing-function: 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.order img {
+	width: 25px; 
+	display: inline-block;
+}
+
+.logo {
+	position: absolute;
+	top: 15%;
+	left: 3%;
+	opacity: 1;
+}
+
+.logo:hover {
+	cursor: pointer;
+	opacity: 0.6;
+	transition-timing-function: .5s ease-in-out;
+}
+
+.floatingMenu {
+	font-style: normal;
+	padding: 40px;
+	background: rgba(255, 234, 234, 0.96);
+	/* For projector platform
+	background-color: rgba(246, 219, 216, 0.96);*/
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 95%;
+	z-index: 10;
+}
+
+.floatingMenu a {
+	font-size: 16px;
+	float: right;
+	display: block;
+	margin: 0 0.5em;
+	color: #63605A;
+	opacity: 1;
+}
+
+.floatingMenu a:link {
+	text-decoration: none;
+}
+
+.floatingMenu a:hover {
+	opacity: 0.6;
+	cursor: pointer;
+	transition-timing-function: .5s ease-in-out;
+}
+
+#loading {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: #615E61;
+	background: rgba(0,0,0,1) url('../img/box.gif') no-repeat;
+	background-size: 200px;
+	background-position: center;
+	position:fixed;
+	z-index: 995;
+}
+
+.count {
+  line-height: 100px;
+  color:white;
+  margin-left:30px;
+  font-size:25px;
+}
+
+#progress {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  	top: 50%;
+  	left: 50%;
+}
+
+.slogan {
+	position: absolute;
+    left: 0;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-style: oblique;
+    letter-spacing: 15px;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    opacity: 0.9;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+.mainPage {
+	background-image: url('../img/muriel_opening.jpg');
+	min-height: 100%;
+}
+
+.how {
+	background-image: url('../img/img3.png');
+	min-height: 500px;
+}
+
+.story {
+	background-image: url('../img/img2.png');
+	min-height: 500px;
+}
+
+.socialMedia {
+	background-image: url('../img/img1.png');
+	min-height: 500px;
+}
+
+.mainPage, .how, .story, .socialMedia {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section {
+	font-style: normal;
+	font-family: "Maitree", serif;
+	color: #63605A;
+	background-color: #F6DBD8;
+	padding: 50px 40px;
+	text-align: justify;
+	height: auto;
+	position: relative;
+	width: 95%;
+	/* Colour for computer platform
+	background-color: #FFEAEA;*/
+}
+
+.grey {
+	font-style: normal;
+	font-family: "Maitree", serif;
+	color: #63605A;
+	background-color: #F6DBD8;
+	padding: 50px 40px;
+	text-align: justify;
+	height: auto;
+	position: relative;
+	width: 95%;
+	color: white;
+	background-color: #63605A;
+	/* For projector platform
+	background-color: #615E61;*/
+}
+
+.sectionText {
+	font-size: 12pt;
+	width: 23vw;
+	margin-top: 20px;
+	margin-left: 60px;
+	margin-right: 50px;
+	line-height: 2;
+	float: left;
+	position: relative;
+}
+
+#guide {
+	height: 95%;
+}
+
+#guide h4 {
+	top: 40%; 
+	left: 13%; 
+	position: absolute; 
+	line-height: 2;
+}
+
+#intro h3 {
+	text-align: center;
+}
+
+#intro h3 span {
+	font-family: "Futura";
+}
+
+.popupSection {
+	position: absolute; 
+	/*right: 15%;*/
+	right: 20vw;
+	top: 130px;
+}
+
+.popupSection div {
+	display: none;
+}
+
+.popupSection .unhidden {
+	display: block;
+	margin-top: 80px;
+}
+
+#intro p, #popupOne p, #popupTwo p, #popupThree p {
+	width: 500px;
+	font-size: 12pt;
+	line-height: 2;
+}
+
+#popupThree img {
+	width: 800px;
+	left: -15%;
+	top: 75%;
+	position: absolute;
+}
+
+.SectionTwo div {
+	margin-top: 50px;
+	position: relative;
+}
+
+.SectionTwo p {
+	margin-left: 100px;
+	width: 35vw;
+	line-height: 2;
+	float: left;
+}
+
+.graph div {
+	margin-top: 100px;
+}
+
+.graph {
+	margin-top: 40px;
+	clear: both;
+	position: relative;
+}
+
+.graph img {
+	width: 50%;
+	margin: 100px auto;
+	display: block;
+	position: relative;
+	background-color: #FFEAEA; 
+	border-radius: 10px;
+}
+
+.blurb {
+	margin: 0 auto; 
+	left: 37%; 
+	position: relative;
+}
+
+.blurb h4 {
+	width: 400px;
+}
+
+.blurb h4 span {
+	font-weight: normal;
+}
+
+.SectionThree div {
+	margin: auto;
+	display: block;
+	position: absolute;
+}
+
+.SectionThree p {
+	margin-left: 120px;
+	width: 35vw;
+	line-height: 2;
+	float: left;
+}
+
+.trial span {
+	font-size: 12pt;
+}
+
+#clip {
+	margin: auto;
+	display: block;
+	width: 800px;
+	margin-bottom: 10px;
+}
+
+#playButton {
+	margin: auto;
+	display: block;
+	margin-bottom: 30px;
+	z-index: 20;
+}
+
+.center p {
+	margin: auto;
+	display: block;
+	width: 550px;
+	line-height: 2;
+}
+
+.center p span {
+	font-weight: bold;
+}
+
+#link {
+	font-weight: bold; 
+	text-decoration: none;
+	color: #63605A;
+}
+
+#link:hover {
+	color: darkgrey;
+	transition: .3s ease-in-out;
+	cursor: pointer;
+}
+
+#buy h2 {
+	margin-bottom: 20px;
+}
+
+.container {
+	margin-left: 20%;
+}
+
+.orderSection {
+	border: 3px solid #777675;
+	border-radius: 10px;
+	padding: 20px;
+	position: relative;
+	float: left;
+	margin: 70px;
+	background-color:#706b6e;
+	
+}
+
+.orderSection h3 {
+	color: pink; 
+	font-size: 16pt;
+}
+
+.orderSection:hover{
+	-webkit-transition: border-radius 2s;
+	box-shadow: inset 0 0 0 5px #777675 ;
+	transition: 1s;
+	background-color: #919191;
+	color: #f7eff9;
+}
+
+.orderSection form {
+	margin-bottom: 10px
+}
+
+.button {
+  border-radius: 4px;
+  background-color: gray;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px auto;
+  display: block;
+}
+
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  color: pink;
+}
+
+.button:hover span {
+  padding-right: 25px;
+  color: pink;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+
+}
+
+.social {
+	margin: 0 auto;
+	position: relative;
+}
+
+.hover1 figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.hover1 img:hover {
+	opacity: .5;
+}
+
+.hover1{
+	position: relative;
+	margin: auto;
+	height: 80px;
+	width: 250px;
+}
+
+figure {
+	width: 300px;
+	height: 80px;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+}
+
+#footer p {
+	text-align: center;
+}
+
+
+
+
